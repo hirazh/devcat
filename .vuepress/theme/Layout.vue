@@ -2,6 +2,7 @@
     <div class="layout-container">  
         <Nav />
         <component :is="layout"></component>
+        <Footer />
     </div>
 </template>
 
@@ -11,6 +12,7 @@ import BlogPostList from './BlogPostList.vue'
 import PostView from './PostView.vue'
 import Nav from './components/Nav.vue'
 import Header from './components/Header.vue'
+import Footer from './components/Footer.vue'
 
 export default {
     name: 'layout',
@@ -18,7 +20,8 @@ export default {
         BlogPostList,
         PostView,
         Nav,
-        Header
+        Header,
+        Footer
     },
     computed: {
         layout() {

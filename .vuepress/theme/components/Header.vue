@@ -1,7 +1,7 @@
 <template>
     <div class="header-container">
         <h1>DevCat</h1>
-        <p>Explore frontend webdevelpment</p>
+        <p>Explore the &lt;front&gt;&#123;end&#125; world</p>
     </div>
 </template>
 
@@ -18,11 +18,16 @@ export default {
 
 .header-container h1 {
     font-family: 'Signika', sans-serif;
-    font-size: 3rem;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
 }
 
 .header-container p {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2rem;
+    margin-top: -15px;
+    margin-bottom: 10%;
+    opacity: .8;
+    letter-spacing: 3px;
 }
 </style>
