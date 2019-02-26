@@ -1,8 +1,21 @@
 <template>
     <div class="bloglist-container">
         <Header />
-        <router-link class="router-link" v-for="post in posts" :to="post.path">
-            <h1>{{post.frontmatter.title}}</h1>
+        <router-link class="router-link" v-for="(post, index) in posts" :key="index" :to="post.path">
+            <div class="blogpost-card">
+                <div class="blogpostcard-date">
+                    {{post.frontmatter.date}}
+                </div>
+                <div class="blogpostcard-title">
+                    <h1>{{post.frontmatter.title}}</h1>
+                </div>
+                <div class="blogpostcard-desc">
+                    <p>{{post.frontmatter.description}}</p>
+                </div>
+                <div class="blogpostcard-author">
+                    <p><span>Author: </span>{{post.frontmatter.author}}</p>
+                </div>
+            </div>
         </router-link>
         <Content />
     </div>
@@ -18,16 +31,41 @@ export default {
         posts() {
             return this.$site.pages
             .filter(x => x.path.startsWith('/blogs/'))
+            .sort(
+                (a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
+            );
         }
     }
 }
 </script>
 
 <style scoped>
+.bloglist-container {
+    margin-left: 20%;
+    margin-right: 20%;
+}
 
 .router-link {
-    color: black;
     text-decoration-line: none;
+}
+
+.blogpost-card {
+    background-color: #332C40;
+    color: #f0f0f0;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    padding: 2%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.blogpostcard-title {
+    font-family: 'Signika', sans-serif;
+}
+
+.blogpostcard-date, .blogpostcard-author {
+    opacity: .5;
+    font-style: italic;
+    font-size: .8rem;
 }
 
 </style>

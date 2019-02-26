@@ -3,7 +3,7 @@
         <nav class="nav-bar">
             <h4>DevCat</h4>
             <h4>
-                <router-link to="/">Home</router-link>
+                <router-link class="nav-router-link" to="/">Home</router-link>
             </h4>
         </nav>
     </div>
@@ -23,6 +23,11 @@ nav {
 }
 .nav-bar h4 {
     margin-left: 3%;
+}
+
+.nav-router-link {
+    color: #f0f0f0;
+    text-decoration-line: none;
 }
 </style>
 

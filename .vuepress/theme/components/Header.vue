@@ -18,9 +18,11 @@ export default {
 
 .header-container h1 {
     font-family: 'Signika', sans-serif;
+    font-size: 3rem;
 }
 
 .header-container p {
     font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
 }
 </style>
