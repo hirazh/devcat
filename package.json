@@ -1,6 +1,15 @@
 {
-    "scripts": {
-      "build": "vuepress build"
-    }
+  "name": "devcat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "vuepress build"
+  },
+  "keywords": [],
+  "author": "Hiraz",
+  "license": "ISC",
+  "dependencies": {
+    "vuepress": "^0.14.9"
+  }
 }
-  
