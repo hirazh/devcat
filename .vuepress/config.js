@@ -2,7 +2,8 @@ module.exports = {
     title: 'DevCat Blog',
     description: 'My awesome blog',
     head: [
-        ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans|Signika' }]
+        ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans|Signika' }],
+        ['script', { href: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }]
     ],
     themeConfig: {
         nav: [
