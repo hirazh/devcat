@@ -62,5 +62,10 @@ export default {
     .content {
         font-size: 1rem;
     }
+
+    .postview-container {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
 }
 </style>
