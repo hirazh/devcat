@@ -54,12 +54,17 @@ export default {
     color: #f0f0f0;
     margin-top: 8%;
     margin-bottom: 8%;
-    padding: 2%;
+    padding: 4%;
     font-family: 'Open Sans', sans-serif;
 }
 
 .blogpostcard-title {
     font-family: 'Signika', sans-serif;
+}
+
+.blogpostcard-desc p {
+    text-align: justify;
+    line-height: 160%;
 }
 
 .blogpostcard-date, .blogpostcard-author {
@@ -68,4 +73,17 @@ export default {
     font-size: .8rem;
 }
 
+@media screen and (max-width: 750px) {
+    .bloglist-container {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    .blogpostcard-title {
+        font-size: 1rem;
+    }
+
+    .blogpostcard-desc p {
+        font-size: .9rem;
+    }
+}
 </style>

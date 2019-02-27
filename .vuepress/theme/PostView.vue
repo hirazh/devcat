@@ -45,4 +45,22 @@ export default {
     font-size: 1rem;
     margin-right: 1%;
 }
+
+@media screen and (max-width: 750px) {
+    .postTitle h1{
+        font-size: 2.2rem;
+    }
+    
+    .postTitle span {
+        font-size: .8rem;
+    }
+
+    .postTitle p {
+        margin-top: -8%;
+    }
+
+    .content {
+        font-size: 1rem;
+    }
+}
 </style>

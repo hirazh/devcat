@@ -30,4 +30,14 @@ export default {
     opacity: .8;
     letter-spacing: 3px;
 }
+
+@media screen and (max-width: 750px) {
+    .header-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-container p {
+        font-size: .9rem;
+    }
+}
 </style>

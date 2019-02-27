@@ -15,7 +15,7 @@ export default {
 
 <style scoped>
 .footer {
-    padding: 8%;
+    padding: 6%;
     text-align: center;
     font-family: 'Signika', sans-serif;
 }
